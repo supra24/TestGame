@@ -6,8 +6,8 @@ public class Map : MonoBehaviour {
 
     public GameObject hexPrefab;
 
-    int width = 10;
-    int height = 10;
+    int width = 5;
+    int height = 5;
 
     float xOffset = 0.882f;
     float zOffset = 0.764f;
@@ -15,8 +15,8 @@ public class Map : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-        for (int x = - width; x <= width; x ++){
-            for (int y = - height; y <= height; y ++){
+        for (int x = - width; x < width; x ++){
+            for (int y = - height; y < height; y ++){
 
                 float xPos = x * xOffset;
 
